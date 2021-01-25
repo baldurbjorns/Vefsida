@@ -20,8 +20,8 @@
 				<nav>
 					<ul>
 						<li><a href="index.html">Heim</a></li>
-						<li><a href="ferilskra.html" class="active">Ferilskrá</a></li>
-						<li><a href="elements.html">Elements</a></li>
+						<li><a href="vefsida.html" class="active">Vefsíðugerð</a></li>
+						<!-- <li><a href="elements.html">Elements</a></li> -->
 					</ul>
 				</nav>
 			</header>
@@ -33,11 +33,55 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Verkefni I - Vefsíðugerð</h1>
-							<span class="image fit"><img src="images/pic22.jpg" alt="" /></span>
-                            <h2>Skref 1</h2>
-							<h3>Byrjunarörðuleikar</h3>
-                            <p>Byrjað var á því að reyna að forrita vefsíðu frá grunni með html5 og css.</p>
+							<span class="image fit"><img src="images/picbrackets.png" alt="" /></span>
+                            <h2>Verkefni fyrir hendi</h2>
+                            <p>Velja eða smíða á html-sniðmát fyrir eigin vefsíðu. Það verður síðan skipulagt og ferilskrá bætt við. Loks er fyrsta verkefnið skrásett og sett á GitHub með því að nota Git Bash.</p>
+                            <h2>Skref 1 - Undirbúningur</h2>
+                            <p>Aðgangur var gerður á GitHub og Git Bash hlaðið niður ásamt Brackets. Brackets er notaðt til að skrifa html og css kóða og Git Bash er notað til að hlaða skrám upp á GitHub.</p>
+                            <h2>Skref 2 - Sniðmát</h2>
+                            <p>Upphaflega var reynt að forrita vefsíðu í html og css frá grunni en snemma komst í ljós að það yrði meiriháttar mál. Því var ákveðið að nota sniðmát frá <a href="https://html5up.net/">HTML5UP</a> sem heitir Hyperspace. Það er einfalt og sýnir allt sem sýna þarf.</p>
+                            <h3>Sniðmátið</h3>
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/pichtml.png" alt="" /></span></div>
+                                        </div>
+                            </div>
+                            <h2>Skref 3 - HTML og CSS</h2>
+                            <p>Breytingar voru gerðar á texta og skipulagi sniðmátsins. Engar stórar breytingar voru gerðar til að byrja með, til að tryggja góða virkni. Síðan voru takkar færðir til og lært meira á html. Skipanirnar fengust flestar frá <a href="elements.html">elements.html</a>. Ekki þurfti að eiga mikið við css-skrá sniðmátsins, sem einfaldaði þetta verk töluvert. Fiktað var í litum og öðru skipulagi. Auðveldast reyndist að finna viðeigandi css-línu með því að nota inspect element í vafranum.</p>
+                            <h3>Inspect element</h3>
+                            <div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/picinspect.png" alt="" /></span></div>
+                                        </div>
+                            </div>
+                            <p>Ferilskrá var bætt við með því að nota <a href="generic.html">generic.html</a> sem fylgdi sniðmátinu. Loks var nokkrum ljósmyndum bætt við til að skreyta aðeins.</p>
+                            <h2>Skref 4 - Hlaða upp á GitHub</h2>
+                            <p>Þetta átti að ganga smurt fyrir sig en tók töluverðan tíma til að gera rétt. Farið var eftir leiðbeiningum og virtist allt ganga vel til að byrja með. Git Bash var notað og kóði beint af GitHub. Fyrsta hindrunin var að staðfesta notandanafn og netfang. Þetta tókst með því að rýna í villumeldinguna og fylgja réttum skipunum. Svo var kóðinn keyrður og beðið var um að staðfesta skráningu á GitHub sem tókst. Eftir þetta birtist aðeins README-skráin en ekkert annað. Í fljótfærni var hinum skráunum hlaðið upp handvirkt til að reyna að koma frumútgáfu vefsíðunnar í gang. Þetta tókst að hluta en css-ið vantaði því ekki er hægt að hlaða upp möppum handvirkt.</p>
+                            <p>Aftur var reynt að fylgja sömu leiðbeiningum en þá kvartaði tölvan að þessar skrár væru nú þegar til á þessu nafni "Vefsida". Því var reynt að gera nýtt repository undir öðru nafni en ekki gekk að hlaða neinu upp. </p>
+                            <h3>Algeng villumelding</h3>
+                            <div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/picvilla.png" alt="" /></span></div>
+                                        </div>
+                            </div>
+                            <p>Það sem virkaði að lokum var að fylgja þessu <a href="https://www.youtube.com/watch?v=8hrJ4oN1u_8">myndbandi</a> þar sem punkti var skeytt aftan við nokkra kóðabútana frá GitHub. Þá var hægt að velja allar skrárnar í möppunni. En þetta virkaði ekki fyrr en gömlu git-skránni var eytt af sjálfri tölvunni með því að velja "show hidden files" í File Explorer. Þá var hægt að hlaða þessu upp án vandræða.</p>
                             
+                            <h3>Kóðabúturinn sem virkaði</h3>
+									<pre><code>echo "# Vefsida" >> README.md
+git init
+git add README.md
+git status
+git add .
+git status
+git commit -m "first commit" .
+git status
+git remote add origin https://github.com/baldurbjorns/Vefsida.git
+git branch -M main
+git push -u origin main</code></pre>
+                            
+                            <p>Þegar nýja vefsíðan var komin í loftið opnaðist hún ekki þrátt fyrir það að GitHub sagði að hún væri virk. Stutt gúgl leysti vandann. Valið var þema fyrir síðuna og viti menn! Hún virkaði!</p>
+                            
+                            <p>Nú er unnið að því að fínpússa allt á vefsíðunni og láta hana virka sem best. Uppfærslur verða gerðar og settar á GitHub og skráðar sem commit.</p>
 						</div>
 					</section>
 
