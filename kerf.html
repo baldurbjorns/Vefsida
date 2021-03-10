@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Hyperspace by HTML5 UP</title>
+		<title>Verkefni II - KERF-próf</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,12 +16,12 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
+				<a href="index.html" class="title">Baldur Björnsson</a>
 				<nav>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
+						<li><a href="index.html">Heim</a></li>
+						<li><a href="kerf.html" class="active">KERF-próf</a></li>
+						<!-- <li><a href="elements.html">Elements</a></li> -->
 					</ul>
 				</nav>
 			</header>
@@ -32,10 +32,21 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">A Generic Page</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+                            <h1 class="major">Verkefni II - KERF-próf</h1>
+							<span class="image fit"><img src="images/KERF/Framleidsluferli-5.jpg" alt="" /></span>
+                            <h2>Verkefni fyrir hendi</h2>
+                            <p>Að gera tilraun með laserskera á 4 mm þykka krossviðsplötu til að meta efnistapið sem verður við skurð.</p>
+                            <h2>Skref 1 - Teikning</h2>
+                            <p>Teikna þurfti skurðarferil fyrir laserskerann. Þetta var fyrst gert í AutoCAD og svo vistað sem adxf-skrá. Svo þurfti að opna adxf-skrána í Inkscape en upp kom villa. Villumeldingunni var flett upp og lagaðist með því að breyta einni breytu í Python-skrá Inkscape. Skráin heitir dxf_input.py í Inkscape\share\inkscape\extensions og með því að breyta línu 72 úr "node = layer.add(inkex.Text(**attribs))" í "node = layer.add(inkex.TextElement(**attribs))" leystist málið.</p>
+                            <h2>Skref 2 - Gerð skúrðarskrár</h2>
+                            <p>Skráin var nú opnuð í Inkscape. Þar var línuþykktum breytt í 0.02 þar sem átti að skera en fyllt í stafina þar sem þeir yrðu bara merktir á yfirborðið. Þessi línuþykkt, 0.02 á aðeins við tiltekna laserskerann sem var í notkun en ekki alla. Loks var skráin vistuð sem pdf sem laserskerinn gat túlkað. Sjá má mynd að neðan af pdf-skránni.</p>
+                            <span class="image fit"><img src="images/kerftest.jpg" alt="" /></span>
+                            <h2>Skref 3 - Laserskurður</h2>
+                            <p>Skránni var hlaðið inn á kubb og farið með inn í laserskurðarherbergið í Fab Lab Reykjavík. Þar var henni hlaðið inn á tölvuna og skjalið opnað. Krossviðsplata 4 mm þykk var sett í laserskerann. Þetta er sérstakur krossviður úr Handverkshúsinu sem er límdur saman með lími sem er tölvert vænna til laserskurðar en finnst í hefðbundum krossvið. Fokúsinn á lasernum var stilltur og valinn upphafspunktur. Kveikt var að loftdælunni sem er algert öryggisatriði. Þá var hægt að senda skrána í skerann og hefja skurðinn. Skurðurinn tók stuttan tíma og gekk vel. Það þurfti hinsvegar að keyra skrána af stað aftur í örskamma stund til að merkja stafina betur á viðinn. Platan og skurðarstykkin voru loks tínd upp úr tækinu.</p>
+                            <span class="image fit"><img src="images/KERF/Framleidsluferli-1.jpg" alt="" /></span>
+                            <h2>Skref 4 - KERF-gildi</h2>
+                            <p>Til að meta KERF skerans þurfti að mæla hversu mikið efni hafi tapast við skurðinn. Þetta var gert með því að þjappa öllum bútunum saman í annan enda rammans og mæla bilið sem varð á hinum endanum. Þetta tókst þokkalega en erfitt var að mæla svona lítið bil með skíðmáli. Það var ákveðið að taka einn bút upp úr og mæla bilið sem myndaðist þá. Þá var hægt að fá areiðanlegt gildi sem reyndist vera 0.13 mm.</p>
+                            <span class="image fit"><img src="images/KERF/Framleidsluferli-7.jpg" alt="" /></span>
 						</div>
 					</section>
 
@@ -45,7 +56,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Baldur Björnsson. Öll réttindi áskilin.</li><li>Hönnun: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
